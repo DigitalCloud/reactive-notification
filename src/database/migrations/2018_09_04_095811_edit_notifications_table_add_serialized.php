@@ -25,8 +25,10 @@ class EditNotificationsTableAddSerialized extends Migration
      */
     public function down()
     {
-        Schema::table('notifications', function (Blueprint $table) {
-            $table->dropColumn('serialized');
-        });
+        if (Schema::hasTable()) {
+            Schema::table('notifications', function (Blueprint $table) {
+                $table->dropColumn('serialized');
+            });
+        }
     }
 }

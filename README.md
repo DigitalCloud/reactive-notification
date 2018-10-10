@@ -11,12 +11,17 @@ This package is designed for store notification once in the database then loadin
 To get the latest version of Laravel multilingual notification, simply require the project using [Composer](https://getcomposer.org):
 
 ```bash
-$ composer require digitalcloud/multilingual-notification
+composer require digitalcloud/multilingual-notification
 ```
 
 publishing migration file
 ```bash
-$ php artisan vendor:publish --provider="Digitalcloud\\MultilingualNotification\\MultilingualNotificationServiceProvider"
+php artisan vendor:publish --provider="Digitalcloud\MultilingualNotification\MultilingualNotificationServiceProvider"
+```
+
+migrate published migration files 
+```bash
+php artisan migrate
 ```
 
 ## Usage
