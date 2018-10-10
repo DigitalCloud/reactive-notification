@@ -6,7 +6,7 @@ This package is designed for store notification once in the database then loadin
 
 ## Installation
 
-[PHP](https://php.net) >=7.1.0 and [Laravel](http://laravel.com) ^5.3 are required.
+[PHP](https://php.net) >=5.6 and [Laravel](http://laravel.com) ^5.3 are required.
 
 To get the latest version of Laravel multilingual notification, simply require the project using [Composer](https://getcomposer.org):
 
