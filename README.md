@@ -76,10 +76,10 @@ $result = $user->notification()->first()->data;
 the result will be
 `[
              "title" => "Invoice title",
-             "details" => "Invoice details",
+             "details" => "Invoice details"
  ]`
  
-then change the old language from en into ar
+then change the old language from `en` into `ar`
  ```PHP
 \App::setLocale("ar");
 $result = $user->notification()->first()->data;
@@ -87,5 +87,5 @@ $result = $user->notification()->first()->data;
 and the result will be
 `[
              "title" => "عنوان الفاتورة",
-             "details" => "تفاصيل الفاتورة",
+             "details" => "تفاصيل الفاتورة"
  ]`
