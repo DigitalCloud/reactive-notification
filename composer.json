@@ -1,0 +1,42 @@
+{
+  "name": "digitalcloud/multilingual-notification",
+  "description": "Multilingual database notifications for laravel",
+  "keywords": [
+    "laravel",
+    "notifications",
+    "notification",
+    "languages",
+    "multilingual-notification",
+    "database",
+    "multilingual",
+    "languages",
+    "notifiable"
+  ],
+  "authors": [
+    {
+      "name": "Yassir Awad",
+      "email": "yassir.awad@dce.sa"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=7.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Digitalcloud\\MultilingualNotification\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Digitalcloud\\MultilingualNotification\\MultilingualNotificationServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
