@@ -16,12 +16,16 @@ composer require digitalcloud/multilingual-notification
 
 publishing migration file
 ```bash
+<<<<<<< HEAD
 php artisan vendor:publish --provider="Digitalcloud\MultilingualNotification\MultilingualNotificationServiceProvider"
 ```
 
 migrate published migration files 
 ```bash
 php artisan migrate
+=======
+$ php artisan vendor:publish --provider="Digitalcloud\MultilingualNotification\MultilingualNotificationServiceProvider"
+>>>>>>> bbb3d637d10620212d13a852a75e8f67eeb27437
 ```
 
 ## Usage
