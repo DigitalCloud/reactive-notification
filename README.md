@@ -79,7 +79,7 @@ the result will be
              "details" => "Invoice details",
  ]`
  
-then change the old language
+then change the old language from en into ar
  ```PHP
 \App::setLocale("ar");
 $result = $user->notification()->first()->data;
