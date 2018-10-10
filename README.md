@@ -76,7 +76,7 @@ class InvoicePaid extends Notification implements ShouldQueue
 $user->notify(new InvoicePaid($invoice));
 
 \App::setLocale("en");
-$result = $user->notification()->first()->data;
+$result = $user->notifications()->first()->data;
 ```
 the result will be
 `[
@@ -87,7 +87,7 @@ the result will be
 then change the old language from `en` into `ar`
  ```PHP
 \App::setLocale("ar");
-$result = $user->notification()->first()->data;
+$result = $user->notifications()->first()->data;
 ```
 and the result will be
 `[
