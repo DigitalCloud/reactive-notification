@@ -26,7 +26,7 @@
   },
   "autoload": {
     "psr-4": {
-      "ReactivelNotification": "src/"
+      "ReactiveNotification": "src/"
     }
   },
   "extra": {

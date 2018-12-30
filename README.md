@@ -1,22 +1,18 @@
-# Laravel Multilingual Notification
-Multilingual database notifications for laravel.
-
-This package is designed for store notification once in the database then loading it in several languages.
- 
+# Reactive Laravel Notification
 
 ## Installation
 
 [PHP](https://php.net) >=5.6 and [Laravel](http://laravel.com) ^5.3 are required.
 
-To get the latest version of Laravel multilingual notification, simply require the project using [Composer](https://getcomposer.org):
+To get the latest version of Reactive Laravel notification, simply require the project using [Composer](https://getcomposer.org):
 
 ```bash
-composer require digitalcloud/multilingual-notification
+composer require digitalcloud/reactive-notification
 ```
 
 publishing migration file
 ```bash
-php artisan vendor:publish --provider="Digitalcloud\MultilingualNotification\MultilingualNotificationServiceProvider"
+php artisan vendor:publish --provider="Digitalcloud\ReactiveNotification\ReactiveNotificationServiceProvider"
 ```
 
 migrate published migration files 
@@ -26,22 +22,22 @@ php artisan migrate
 
 ## Usage
 
-1. Change trait used in model from `notifable` to `MultilingualNotifiable`
+1. Change trait used in model from `Illuminate\Notifications\Notifiable` to `Digitalcloud\ReactiveNotification\Traits\Notifiable`
 ```PHP
 <?php
 
 namespace App;
 
-use Digitalcloud\MultilingualNotification\Traits\MultilingualNotifiable;
+use Digitalcloud\ReactiveNotification\Traits\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use MultilingualNotifiable;
+    use Notifiable;
 }
 ```
 
-2. Change delivery channel from `database` or `DatabaseChannel` to `DBChannel`
+2. Change delivery channel from `database` or `DatabaseChannel` to `Digitalcloud\ReactiveNotification\Channels\DatabaseChannel`
 ```PHP
 <?php
 
@@ -50,7 +46,7 @@ namespace App\Notifications;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use Digitalcloud\MultilingualNotification\Channels\DBChannel;
+use Digitalcloud\ReactiveNotification\Channels\DatabaseChannel;
 
 class InvoicePaid extends Notification implements ShouldQueue
 {
@@ -58,7 +54,7 @@ class InvoicePaid extends Notification implements ShouldQueue
 
     public function via($notifiable)
     {
-        return [DBChannel::class,'.../'];
+        return [DatabaseChannel::class,'.../'];
     }
     
     
