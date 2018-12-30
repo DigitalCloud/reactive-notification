@@ -1,10 +1,10 @@
 <?php
 
-namespace Digitalcloud\MultilingualNotification;
+namespace Digitalcloud\ReactiveNotification;
 
 use Illuminate\Support\ServiceProvider;
 
-class MultilingualNotificationServiceProvider extends ServiceProvider
+class ReactiveNotificationServiceProvider extends ServiceProvider
 {
     public function boot()
     {

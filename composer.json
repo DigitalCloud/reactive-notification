@@ -1,14 +1,15 @@
 {
-  "name": "digitalcloud/multilingual-notification",
-  "description": "Multilingual database notifications for laravel",
+  "name": "digitalcloud/reactive-notification",
+  "description": "Reactive Laravel Notification",
   "keywords": [
     "laravel",
     "notifications",
     "notification",
     "languages",
     "language",
+    "reactive",
     "multilingual",
-    "multilingual-notification",
+    "reactive-notification",
     "database",
     "languages",
     "notifiable"
@@ -25,13 +26,13 @@
   },
   "autoload": {
     "psr-4": {
-      "Digitalcloud\\MultilingualNotification\\": "src/"
+      "ReactivelNotification": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Digitalcloud\\MultilingualNotification\\MultilingualNotificationServiceProvider"
+        "Digitalcloud\\ReactiveNotification\\ReactiveNotificationServiceProvider"
       ]
     }
   },

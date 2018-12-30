@@ -1,11 +1,10 @@
 <?php
 
-namespace Digitalcloud\MultilingualNotification\Channels;
+namespace Digitalcloud\ReactiveNotification\Channels;
 
-use Illuminate\Notifications\Channels\DatabaseChannel;
 use Illuminate\Notifications\Notification;
 
-class DBChannel extends DatabaseChannel
+class DatabaseChannel extends Illuminate\Notifications\Channels\DatabaseChannel
 {
     /**
      * Send the given notification.

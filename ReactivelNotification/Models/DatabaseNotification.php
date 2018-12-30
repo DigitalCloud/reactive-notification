@@ -1,8 +1,8 @@
 <?php
 
-namespace Digitalcloud\MultilingualNotification\Models;
+namespace Digitalcloud\ReactiveNotification\Models;
 
-class MultilingualDatabaseNotification extends \Illuminate\Notifications\DatabaseNotification
+class DatabaseNotification extends \Illuminate\Notifications\DatabaseNotification
 {
     public function getDataAttribute()
     {
