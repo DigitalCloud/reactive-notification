@@ -1,4 +1,5 @@
 # Reactive Laravel Notification
+Building advanced Laravel notifications, solving multilingual and content changing problems.
 
 ## Installation
 
