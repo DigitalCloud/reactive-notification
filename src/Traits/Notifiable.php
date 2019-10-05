@@ -3,10 +3,11 @@
 namespace Digitalcloud\ReactiveNotification\Traits;
 
 use Digitalcloud\ReactiveNotification\Models\DatabaseNotification;
+use Illuminate\Notifications\Notifiable as BaseNotifiable;
 
 trait Notifiable
 {
-    use Illuminate\Notifications\Notifiable;
+    use BaseNotifiable;
 
     public function notifications()
     {
